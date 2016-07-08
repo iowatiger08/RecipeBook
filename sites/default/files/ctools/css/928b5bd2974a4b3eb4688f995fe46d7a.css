@@ -1,0 +1,63 @@
+
+.t-edge, .b-edge, .l-edge, .r-edge, .wrap-corner {
+  position: relative;
+  /* hasLayout -1 ? For IE only */
+  zoom: 1;
+}
+#main_home .t-edge {
+  background: url(/sites/all/modules/panels/plugins/styles/corners/shadow-t.png) repeat-x 0 top;
+  font-size: 1px;
+}
+#main_home .b-edge {
+  background: url(/sites/all/modules/panels/plugins/styles/corners/shadow-b.png) repeat-x 0 bottom;
+  font-size: 1px;
+}
+#main_home .l-edge {
+  background: url(/sites/all/modules/panels/plugins/styles/corners/shadow-l.png) repeat-y 0 0;
+}
+#main_home .r-edge {
+  background: url(/sites/all/modules/panels/plugins/styles/corners/shadow-r.png) repeat-y right 0;
+}
+#main_home .wrap-corner {
+  background: #fff !important;
+}
+#main_home .wrap-corner .t-edge, #main_home .wrap-corner .b-edge {
+  height: 11px;
+}
+#main_home .wrap-corner .l, #main_home .wrap-corner .r {
+  position: absolute;
+  top: 0;
+  height: 11px;
+  width: 11px;
+  background-image: url(/sites/all/modules/panels/plugins/styles/corners/corner-bits.png);
+}
+#main_home .wrap-corner .l {
+  left: 0;
+}
+#main_home .wrap-corner .r {
+  right: 0;
+  background-position: -11px 0;
+}
+#main_home .wrap-corner .b-edge .l {
+  background-position: 0 -11px;
+}
+#main_home .wrap-corner .b-edge .r {
+  background-position: -11px -11px;
+}
+#main_home .wrap-corner .r-edge {
+  padding: 5px 24px;
+}
+#main_home div.admin-links {
+  margin-top: -14px;
+  margin-left: -12px;
+}
+
+#main_home .panel-separator {
+  background: url(/sites/all/modules/panels/plugins/styles/corners/shadow-b.png) repeat-x 0 center;
+  font-size: 1px;
+  height: 30px;
+}
+
+#main_home .rounded-corner {
+  margin-bottom: 1em;
+}
